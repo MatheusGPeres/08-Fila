@@ -90,10 +90,10 @@ void insere()
 
 	if (inicio == NULL) {
 		inicio = novo;
-		inicio->prox = NULL;
+		fim = novo;
 	}
 	else {
-		novo->prox = fim;
+		fim->prox = novo;
 		fim = novo;
 	}
 	cout << "Elemento inserido!" << endl;
